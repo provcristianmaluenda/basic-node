@@ -1,0 +1,18 @@
+jobs:
+  - name: test runCI
+    type: runCI
+  - steps:
+    - IN: cmm-vars
+    - TASK:
+          name: delivery_container_pull
+          script:
+            - docker pull docker.provdig.com/runsh:0.47
+      - TASK:
+          name: deploy_prod
+          runtime:
+            options:
+              imageName: docker.provdig.com/runsh
+              imageTag: '0.47'
+              pull: false
+          script:
+            - echo "Hola Mundo"
