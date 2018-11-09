@@ -1,5 +1,5 @@
 jobs:
-  - name: test runCI
+  - name: cmaluenda-basic-node-job-runCI
     type: runCI
   - steps:
     - IN: cmm-vars
