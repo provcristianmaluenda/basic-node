@@ -1,5 +1,5 @@
 jobs:
-  - name: basic-node_runCI
+  - name: basic-node-test-runCI
     type: runCI
     steps:
       - IN: basic-node-vars
