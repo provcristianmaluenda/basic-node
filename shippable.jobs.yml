@@ -3,9 +3,9 @@ jobs:
     type: runSh
     steps:
       - TASK:
-        name: delivery_container_pull
-        script:
-          - docker pull alpine:3.7
+          name: delivery_container_pull
+          script:
+            - docker pull alpine:3.7
       - TASK:
           name: run_hw
           runtime:
@@ -15,7 +15,8 @@ jobs:
               pull: false
           script:
             - echo "Hello World"
-  - name: basic-node-test_runCI
+
+  - name: basic-node_runCI
     type: runCI
     steps:
       - TASK:
