@@ -10,4 +10,4 @@ jobs:
               imageTag: '3.7'
               pull: false
           script:
-            - echo "Hola Mundo"
+            - echo "Hello World"
