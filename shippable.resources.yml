@@ -1,6 +1,6 @@
 resources:
 # Var file for myservicejava build output
-  - name: cmaluenda-basic-node-vars
+  - name: basic-node-vars
     type: params
     version:
       params:

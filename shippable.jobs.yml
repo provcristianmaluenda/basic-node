@@ -1,8 +1,8 @@
 jobs:
-  - name: cmaluenda-basic-node-job-runCI
+  - name: basic-node_runCI
     type: runCI
     steps:
-      - IN: cmaluenda-basic-node-vars-vars
+      - IN: basic-node-vars
       - TASK:
             name: delivery_container_pull
             script:
