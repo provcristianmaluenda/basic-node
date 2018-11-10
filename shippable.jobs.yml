@@ -1,6 +1,6 @@
 jobs:
   - name: basic-node-test
-    type: runCI
+    type: runSh
     steps:
       - TASK:
           name: run_hw
