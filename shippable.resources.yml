@@ -4,4 +4,4 @@ resources:
     type: params
     version:
       params:
-ENV: int
+        ENV: int
