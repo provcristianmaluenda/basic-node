@@ -1,8 +1,7 @@
 jobs:
   - name: basic-node-test
-    type: runSh
+    type: runCI
     steps:
-      - IN: basic-node-vars
       - TASK:
           name: run_hw
           runtime:
