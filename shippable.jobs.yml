@@ -1,18 +1,14 @@
 jobs:
-  - name: basic-node_runCI
-    type: runCI
+  - name: basic-node-test
+    type: runSh
     steps:
       - IN: basic-node-vars
       - TASK:
-            name: delivery_container_pull
-            script:
-              - docker pull docker.provdig.com/runsh:0.47
-      - TASK:
-          name: deploy_prod
+          name: run_hw
           runtime:
             options:
-              imageName: docker.provdig.com/runsh
-              imageTag: '0.47'
+              imageName: alpine
+              imageTag: '3.7'
               pull: false
           script:
             - echo "Hola Mundo"
